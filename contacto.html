@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Tienda de alimentación DIW descuentos y los mejores servicios en tu ciudad</title>
+        <meta name="title" content="Tienda de alimentación DIW descuentos y los mejores servicios en tu ciudad">
+        <meta name="description" content="Tienda de alimentación con comida, bebida, congelados y ofertas todos los días. Servicio a domicilio y de recogida en tienda. Aparcamiento y aseos para clientes.">
+        <meta name="author" content="Elena">
+        <meta name="keywords" content="supermercado, diw, alimentación, congelados, comida, bebida, ofertas">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="copyright" content="2025, Elena Martínez Martínez">
+        <meta name="robots" content="index,follow">
+        <meta name="language" content="es">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo.ico">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Noto Sans" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1><a href="index.html"><img src="assets/images/logo.png" alt="logotipo Supermercado DIW" width="64" height="64"></a>Supermercado DIW</h1>
+            <h2>Tu tienda de alimentación</h2>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div id="whatsapp"><a href="#whatsapp"><img src="assets/images/whatsapp.png" alt="whatsapp" width="32" height="32"></a></div>
+        <form>
+            <fieldset>
+                <div class= "form-row">
+                    <label for="nombre" class="required">Nombre:</label><br>
+                    <input type="text" class="caja" id="nombre" name="nombre" placeholder="Nombre y apellidos" max="40" size="40" pattern="[A-Za-z0-9]+" required autofocus>
+                </div>
+                <div class= "form-row">
+                    <label for="email" class="required">Email:</label><br>
+                    <input type="email" class="caja" id="email" name="email" placeholder="email@ejemplo.com" size="40" required>
+                </div>
+                <div class= "form-row">
+                    <label for="edad" class="required">Edad:</label><br>
+                    <input type="number" min="18" max="99" class="caja" id="edad" name="edad" placeholder="18-99" size="4" required>
+                </div>
+                <div class= "form-row">
+                    <label for="telefono" class="required">Teléfono:</label><br>
+                    <input type="tel" class="caja" id="telefono" name="telefono" placeholder="+34 000 000 000" size="15" required>
+                </div>
+                <div class= "form-row">
+                    <label for="consulta" class="required">Consulta:</label><br>
+                    <textarea class="caja" rows="10" cols="40" placeholder="Escriba aquí su consulta" id="consulta" name="consulta" required></textarea>
+                </div>
+                <div class= "form-button">
+                    <input type="submit" class="boton" id="enviar" name="enviar">
+                </div>
+            </fieldset>
+            <section>
+                <div>Datos de contacto</div>
+                <div id="telefono-contacto">Teléfono: <a href="tel:+34123456789">+34 123 456 789</a></div>
+            </section>
+        </form>
+    </body>
+</html>
