@@ -1,6 +1,7 @@
 * {
     box-sizing:border-box;
     text-align:center;
+    font-family: Arial, sans-serif;
 }
 .limpiar{
     clear:both;
@@ -37,4 +38,43 @@ header, #menu, footer{
 }
 article, aside{
     height:10.75em;
+}
+@media (min-width: 700px) and (max-width: 1200px) {
+    * {
+        font-family:Calibri, sans-serif;
+    }
+    #nav2{
+        display:none;
+    }
+    article{
+        height:15em;
+        width:70%;
+        float:left;
+    }
+    section {
+        float:none;
+        width:100%;
+    }
+    aside{
+        clear:both;
+        height:auto;
+        width:98%;
+        float:none;
+    }
+
+}
+@media (max-width: 699px) {
+    * {
+        font-family:'Times New Roman', serif;
+    }
+    #nav2{
+        display:block;
+    }
+    #nav1, #nav2, article, aside, section {
+        float: none;
+        width: 99%;
+    }
+    #nav1, #nav2, aside, section {
+        height:auto;
+    }
 }
