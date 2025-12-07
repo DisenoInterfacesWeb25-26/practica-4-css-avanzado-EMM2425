@@ -16,7 +16,7 @@ a:any-link
 {
     text-decoration: none;
 }
-h1{
+h1, .titulo{
     font-size: 64px;
     text-align:center;
     color:#FF5841;
@@ -26,11 +26,25 @@ h2{
     text-align:center;
 }
 /*Inicio*/
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-color:#FFFFFF;
+    z-index:10;
+    text-align:center;
+    padding-bottom:1em;
+    border-bottom: 0.1em solid #FFB641;
+}
 header>h1>a>img{
     margin:1em 1em auto auto;
 }
 main{
-    margin-top:10%;
+    margin-top:300px;
+    display: flex;
+    justify-content:space-between;
+    padding:1em;
 }
 aside>h3{
     color:#B85E06;
@@ -44,29 +58,22 @@ aside>ul>li>a:hover{
 h3{
     font-size:24px;
 }
-nav{
-    position:fixed;
-    margin-top:15%;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index:10;
-    background-color:#FFFFFF;
-}
+
 nav>ul{
+    display: flex;
+    justify-content: center;
     margin-top:2em;
     list-style:none;
     text-align:center;
 }
 nav>ul>li{
-    display:inline;
+    margin:0.5em;
 }
 nav>ul>li>a{
     font-size:24px;
     color: #FFFFFF;
     background-color:#C53678;
     padding: 0.25em 0.5em;
-    margin: 2em 0.5em;
     border-radius: 0.2em;
     border-color:#8A0843;
 }
@@ -79,14 +86,12 @@ main>section>article{
 main>section{
     margin: 1em;
     width: 58%;
-    float: left;
 }
 aside {
     border: 0.1em solid #FFB641;
     margin:1em;
     padding:0.75em;
     width: 30%;
-    float: left;
 }
 aside>ul{
     list-style-position:inside;
@@ -94,11 +99,15 @@ aside>ul{
 footer {
     margin:1em;
     padding:0.75em;
-    text-align: center;
-    clear:both;
+    text-align:center;
+    justify-content:space-between;
+    align-items:center;
+    display:flex;
+    flex-direction:column;
     border:0.1em solid #FFB641;
 }
 #redes-sociales{
+    display:flex;
     margin:0.5em;
 }
 #redes-sociales>a{
@@ -112,6 +121,7 @@ footer>div>a:hover{
 }
 .footer-text{
     background-color:#FFB641;
+    width:100%;
 }
 #whatsapp{
     position:fixed;
@@ -210,4 +220,28 @@ caption{
 }
 th{
     color:#B85E06;
+}
+@media (min-width: 700px) and (max-width: 1200px) {
+    main {
+        flex-wrap:wrap;
+        align-items:center;
+        justify-content:center;
+    }
+    
+}
+@media (max-width: 699px) {
+    main {
+        flex-direction:column;
+        align-items:center;
+    }
+    nav>ul{
+        flex-direction:column-reverse;
+    }
+    .titulo, header>h2{
+        display:none;
+    }
+    #redes-sociales{
+        flex-direction:column;
+        align-items:center;
+    }
 }
