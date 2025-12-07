@@ -16,6 +16,10 @@ a:any-link
 {
     text-decoration: none;
 }
+/*Cuando no has puesto alt en la imagen*/
+a:not([alt]){
+    border: 3px solid red;
+}
 h1, .titulo{
     font-size: 64px;
     text-align:center;
@@ -55,16 +59,19 @@ aside>ul>li>a{
 aside>ul>li>a:hover{
     color:#B85E06;
 }
+aside>ul>li>a[href$=".pdf"]::after{
+    content:url('assets/images/pdf.png');
+}
 h3{
     font-size:24px;
 }
-
 nav>ul{
     display: flex;
     justify-content: center;
     margin-top:2em;
     list-style:none;
     text-align:center;
+    box-shadow:0px 10px 12px #FFF4DE;
 }
 nav>ul>li{
     margin:0.5em;
@@ -73,12 +80,14 @@ nav>ul>li>a{
     font-size:24px;
     color: #FFFFFF;
     background-color:#C53678;
+    transition:background-color 0.7s ease, color 1s ease-in-out;
     padding: 0.25em 0.5em;
     border-radius: 0.2em;
     border-color:#8A0843;
 }
 nav>ul>li>a:hover{
     color: #8A0843;
+    background-color:#c5367928;
 }
 main>section>article{
     padding: 0.75em;
@@ -112,6 +121,11 @@ footer {
 }
 #redes-sociales>a{
     padding:1em;
+    transition: transform 1s ease;
+}
+#redes-sociales>a:hover{
+    padding:1em;
+    transform: rotate(45deg);
 }
 footer>div>a{
     color:inherit;
