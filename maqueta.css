@@ -1,0 +1,40 @@
+* {
+    box-sizing:border-box;
+    text-align:center;
+}
+.limpiar{
+    clear:both;
+}
+section {
+    float:left;
+}
+#nav1, #nav2, article, aside {
+    float:left;
+    margin:0.5em;
+    border:0.1em solid rgb(0, 119, 255);
+    padding:1em;
+}
+#nav1{
+    width:24%;
+    height:15em;
+}
+#nav2{
+    width:98%;
+}
+section{
+    width:74%;
+}
+article{
+    width:74%;
+}
+aside{
+    width:22%;
+}
+header, #menu, footer{
+    margin:0.5em;
+    border:0.1em solid rgb(0, 119, 255);
+    padding:1em;
+}
+article, aside{
+    height:10.75em;
+}
