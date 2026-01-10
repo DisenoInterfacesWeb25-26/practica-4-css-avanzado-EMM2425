@@ -16,19 +16,20 @@
     </head>
     <body>
         <header>
-            <h1><a href="index.html"><img src="assets/images/logo.png" alt="logotipo Supermercado DIW" width="64" height="64"></a>Supermercado DIW</h1>
+            <h1><img src="assets/images/logo.png" alt="logotipo Supermercado DIW" width="64" height="64">Supermercado DIW</h1>
             <h2>Tu tienda de alimentación</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
         </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
         <div id="whatsapp"><a href="#whatsapp"><img src="assets/images/whatsapp.png" alt="whatsapp" width="32" height="32"></a></div>
         <form>
             <fieldset>
+                <legend>Envíenos su consulta:</legend>
                 <div class= "form-row">
                     <label for="nombre" class="required">Nombre:</label><br>
                     <input type="text" class="caja" id="nombre" name="nombre" placeholder="Nombre y apellidos" max="40" size="40" pattern="[A-Za-z0-9]+" required autofocus>
@@ -50,7 +51,7 @@
                     <textarea class="caja" rows="10" cols="40" placeholder="Escriba aquí su consulta" id="consulta" name="consulta" required></textarea>
                 </div>
                 <div class= "form-button">
-                    <input type="submit" class="boton" id="enviar" name="enviar">
+                    <button type="submit" class="boton" id="enviar" name="enviar">Enviar consulta</button>
                 </div>
             </fieldset>
             <section>

@@ -17,7 +17,7 @@ a:any-link
     text-decoration: none;
 }
 /*Cuando no has puesto alt en la imagen*/
-a:not([alt]){
+img:not([alt]){
     border: 3px solid red;
 }
 h1, .titulo{
@@ -153,6 +153,11 @@ fieldset{
     width:50%;
     text-align:center;
     border-color:#c5367945;
+}
+legend{
+    margin-left:auto;
+    margin-right:auto;
+    color: #8A0843;
 }
 .form-row{
     padding:0.75em;
